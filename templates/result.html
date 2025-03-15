@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Recommendation for "{{ mood.capitalize() }}" Mood</h1>
+    <p><strong>🎵 Song Suggestion:</strong> {{ song }}</p>
+    <p><strong>🎯 Activity Suggestion:</strong> {{ activity }}</p>
+
+    <a href="/">⬅ Go Back</a>
+</body>
+</html>

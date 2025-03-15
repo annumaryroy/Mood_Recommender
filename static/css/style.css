@@ -1,0 +1,71 @@
+/* 1. Apply a smooth pastel gradient background */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* Soft pink & blue */
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Style the main title */
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-top: 40px;
+}
+
+/* 3. Centered form with soft edges */
+form {
+    margin-top: 30px;
+}
+
+/* 4. Make dropdown more stylish */
+select {
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 2px solid #ffb6c1;
+    background-color: #fff;
+    color: #444;
+}
+
+/* 5. Smooth, modern buttons */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff9aa2;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff758c;
+}
+
+/* 6. The Magic: Stylish Card for Result */
+.result-box {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 400px;
+}
+
+/* 7. Subtle animations */
+.result-box h2 {
+    color: #444;
+    font-size: 1.5rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Simple fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Recommender</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Mood-Based Playlist & Activity Recommender!</h1>
+    <p>Select your current mood to get personalized recommendations.</p>
+
+    <!-- Mood Selection Form -->
+    <form action="/recommend" method="post">
+        <label for="mood">Choose your mood:</label>
+        <select name="mood" id="mood">
+            <option value="happy">Happy 😊</option>
+            <option value="sad">Sad 😔</option>
+            <option value="energetic">Energetic 💪</option>
+            <option value="relaxed">Relaxed 😌</option>
+            <option value="overwhelmed">Overwhelmed 😵‍💫</option>
+            <option value="anxious">Anxious 😟</option>
+            <option value="bored">Bored 😴</option>
+            <option value="motivated">Motivated 🚀</option>
+            <option value="lonely">Lonely 🥺</option>
+            <option value="nostalgic">Nostalgic 🏡</option>
+            <option value="stressed">Stressed 😩</option>
+        </select>
+
+        <button type="submit">Get Recommendations</button>
+    </form>
+</body>
+</html>
